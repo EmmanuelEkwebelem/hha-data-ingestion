@@ -13,12 +13,12 @@ apiDataset = requests.get('https://data.cms.gov/data-api/v1/dataset/75e8dcb2-78e
 apiDataset = apiDataset.json() 
 
 ### Section 3 ###
-client = bigquery.Client.from_service_account_json('C:/Users/emman/Documents/GitHub/hha-data-ingestion/Data/hha-507-365120-eab88dc2636e.json')
+client = bigquery.Client.from_service_account_json('C:/Users/emman/Documents/GitHub/hha-data-ingestion/Data/hha-507-365120-b659f92c0663.json')
 query_job = client.query("SELECT * FROM `bigquery-public-data.crypto_bitcoin_cash.transactions` LIMIT 100")
 results = query_job.result()
 bigquery1 = pd.DataFrame(results.to_dataframe())
 
-client = bigquery.Client.from_service_account_json('C:/Users/emman/Documents/GitHub/hha-data-ingestion/Data/hha-507-365120-eab88dc2636e.json')
+client = bigquery.Client.from_service_account_json('C:/Users/emman/Documents/GitHub/hha-data-ingestion/Data/hha-507-365120-b659f92c0663.json')
 query_job = client.query("SELECT * FROM `bigquery-public-data.chicago_crime.crime` LIMIT 100")
 results = query_job.result()
 bigquery2 = pd.DataFrame(results.to_dataframe())
