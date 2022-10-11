@@ -1,7 +1,7 @@
 
 # HHA 507 - Assignment # 1
 
-This project represents the completion of HHA 507 Assignment # 1 
+This repository represents the completion of HHA 507 Assignment # 1 
 
 
 Instructions: 
